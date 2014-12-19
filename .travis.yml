@@ -5,4 +5,4 @@ install:
 before_script:
   - cookiecutter . --no-input
 script:
-  - cd myApp && npm install && grunt
+  - cd myApp && npm install && node_modules/grunt
