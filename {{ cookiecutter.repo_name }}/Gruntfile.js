@@ -8,15 +8,15 @@ module.exports = function(grunt) {
                     minified: '{{ cookiecutter.dist_folder }}/{{ cookiecutter.repo_name }}/app.min.js',
                 },
                 htmlFiles: [
-                    'app/**/*.html',
-                    'app/**/*.jade',
+                    '{{ cookiecutter.app_folder }}/**/*.html',
+                    '{{ cookiecutter.app_folder }}/**/*.jade',
                 ],
                 jsFiles: [
-                    'app/**/*.js',
+                    '{{ cookiecutter.app_folder }}/**/*.js',
                     '!**/test_*.js',
                 ],
                 checkFiles: [
-                    'app/**/*.js',
+                    '{{ cookiecutter.app_folder }}/**/*.js',
                 ],
             },
             grunt: {

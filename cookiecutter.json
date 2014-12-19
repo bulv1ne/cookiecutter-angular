@@ -1,4 +1,5 @@
 {
     "repo_name": "myApp",
+    "app_folder": "app",
     "dist_folder": "static"
 }
