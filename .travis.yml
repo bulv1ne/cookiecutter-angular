@@ -2,7 +2,8 @@ language: python
 python: 2.7
 install:
   - sudo pip install cookiecutter
+  - npm install -g grunt-cli
 before_script:
   - cookiecutter . --no-input
 script:
-  - cd myApp && npm install && node_modules/grunt
+  - cd myApp && npm install && grunt
