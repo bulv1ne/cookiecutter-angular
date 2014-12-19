@@ -1,0 +1,6 @@
+install:
+  - pip install cookiecutter
+before_script:
+  - cookiecutter . --no-input
+script:
+  - cd myApp && npm install && grunt
