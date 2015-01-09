@@ -13,7 +13,7 @@ module.exports = function(grunt) {
                 ],
                 jsFiles: [
                     '{{ cookiecutter.app_folder }}/**/*.js',
-                    '!**/test_*.js',
+                    '!{{ cookiecutter.app_folder }}/**/test_*.js',
                 ],
                 checkFiles: [
                     '{{ cookiecutter.app_folder }}/**/*.js',
