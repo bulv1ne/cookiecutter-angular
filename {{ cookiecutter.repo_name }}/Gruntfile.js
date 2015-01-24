@@ -6,6 +6,9 @@ module.exports = function(grunt) {
                     templates: '{{ cookiecutter.dist_folder }}/{{ cookiecutter.repo_name }}/app-templates.js',
                     general: '{{ cookiecutter.dist_folder }}/{{ cookiecutter.repo_name }}/app.js',
                     minified: '{{ cookiecutter.dist_folder }}/{{ cookiecutter.repo_name }}/app.min.js',
+
+                    bowerjs: '{{ cookiecutter.dist_folder }}/{{ cookiecutter.repo_name }}/bower.min.js',
+                    bowercss: '{{ cookiecutter.dist_folder }}/{{ cookiecutter.repo_name }}/bower.min.css',
                 },
                 htmlFiles: [
                     '{{ cookiecutter.app_folder }}/**/*.html',
@@ -17,6 +20,7 @@ module.exports = function(grunt) {
                 ],
                 checkFiles: [
                     '{{ cookiecutter.app_folder }}/**/*.js',
+                    'karma.conf.js',
                 ],
             },
             grunt: {
@@ -25,5 +29,5 @@ module.exports = function(grunt) {
         }
     });
 
-    grunt.registerTask('default', ['jscs', 'jshint', 'html2js', 'ngAnnotate', 'uglify']);
+    grunt.registerTask('default', ['jscs', 'jshint', 'html2js', 'ngAnnotate', 'uglify', 'bower_concat']);
 };
