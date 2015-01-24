@@ -2,7 +2,7 @@ language: python
 python: 2.7
 install:
   - sudo pip install cookiecutter
-  - npm install -g grunt-cli
+  - npm install -g grunt-cli karma-cli
 before_script:
   - cookiecutter . --no-input
 script:
