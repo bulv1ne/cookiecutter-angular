@@ -7,7 +7,7 @@ module.exports = function(config) {
 
         files : [
             '{{ cookiecutter.dist_folder }}/{{ cookiecutter.repo_name }}/bower.min.js',
-            '{{ cookiecutter.dist_folder }}/{{ cookiecutter.repo_name }}/app.min.js',
+            '{{ cookiecutter.dist_folder }}/{{ cookiecutter.repo_name }}/{{ cookiecutter.repo_name }}.min.js',
             '{{ cookiecutter.dist_folder }}/bower_components/angular-mocks/angular-mocks.js',
             '{{ cookiecutter.app_folder }}/**/test_*.js',
         ],
